@@ -19,18 +19,42 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <div class="bg-secondary w-full flex flex-col gap-7">
-                <h1 class="">Ceci est un test</h1>
-                <h2 class="">Ceci est un test</h2>
-                <span class="lead">Ceci est un test LEAD</span>
-                <span class="body-lg">Ceci est un test BODY-LG</span>
-                <span class="body-base">Ceci est un test BODY-BASE</span>
-                <span class="caption">Ceci est un test CAPTION</span>
-                <span class="caption-1">Ceci est un test CAPTION-1</span>
-                <i class="ri-phone-fill icon"></i>
-                <i class="ri-star-fill icon-lg"></i>
-            </div>
+        <header class="bg-secondary w-full top-0 left-0 z-10">
+            <nav class="flex items-center justify-between relative">
+                <a href="#" class="mx-5 my-3">
+                    <span class="body-base">Maxime <span class="text-primary">Lecieux</span></span>
+                </a>
+                <div class="hover">
+                    <a href="tel:0783607185" class="body-lg underline">07.83.60.71.85</a>
+                    <i class="hidden ri-phone-fill body-lg lg:inline"></i>
+                </div>
+                <div class="bg-secondary fixed top-0 -right-full w-9/12 h-full pt-20 pl-7 lg:sticky lg:top-0 lg:w-auto lg:py-5 lg:px-5" id="nav-menu">
+                    <div id="nav-close" class="lg:hidden">
+                        <i class="ri-close-line icon-lg absolute top-4 right-5"></i>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        
+                        <ul class="flex flex-col lg:flex-row gap-9">
+                            <li class="body-lg hover"><a href="#">Services</a></li>
+                            <li class="body-lg hover"><a href="#">Tarifs</a></li>
+                            <li class="body-lg hover"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mx-10 my-6 cursor-pointer lg:hidden" id="nav-toggle">
+                    <i class="ri-menu-line icon-lg"></i>
+                </div>
+            </nav>
         </header>
+
+        <!--
+            star icon <i class="ri-star-fill"></i>
+            phone icon <i class="ri-phone-fill"></i> 
+            menu icon <i class="ri-menu-line"></i>
+            close icon <i class="ri-close-line"></i>
+        -->
+        <script src="main.js"></script>
     </body>
 </html>

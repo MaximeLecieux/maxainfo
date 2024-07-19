@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primary: #2AB691;
+    --secondary:#FCFCFC
+}
 /** =============== TYPOGRAPHY =============== **/
 html {
     font-family: "Poppins", sans-serif;
@@ -9,7 +13,7 @@ h1 {
     font-size: 72px;
     font-weight: 600;
     letter-spacing: -4.5px;
-    color: #2AB691;
+    color: var(--primary);
 }
 
 h2 {
@@ -49,15 +53,24 @@ h2 {
 }
 
 .icon {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
 }
 
 .icon-lg {
-    width: 35px;
-    height: 35px;
+    font-size: 25px;
 }
 
-@layer utilities {
-    
+li{
+    list-style: none;
+}
+
+.hover:hover{
+    transition: .4s;
+    color: var(--primary);
+}
+
+#nav-menu{
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); /* For Safari */
+    transition: right .4s;
 }
