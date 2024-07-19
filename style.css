@@ -1,0 +1,6 @@
+@layer utilities {
+    .title {
+      font-weight: 900;
+      text-decoration: underline;
+    }
+}
