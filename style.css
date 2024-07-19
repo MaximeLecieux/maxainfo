@@ -14,12 +14,14 @@ h1 {
     font-weight: 600;
     letter-spacing: -4.5px;
     color: var(--primary);
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 55px;
     font-weight: 500;
     letter-spacing: -2.5px;
+    text-transform: uppercase;
 }
 
 .lead {
@@ -69,8 +71,27 @@ li{
     color: var(--primary);
 }
 
+/** =============== Navigation =============== **/
+
 #nav-menu{
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px); /* For Safari */
     transition: right .4s;
+}
+
+/** =============== Small Screen =============== **/
+
+@media screen and (max-width:1024px) {
+    h1 {
+        font-size: 35px;
+        letter-spacing: -1.5px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
 }
