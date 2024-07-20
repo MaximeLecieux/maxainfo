@@ -92,6 +92,10 @@ li{
     }
 
     .lead {
+        font-size: 20px;
+    }
+
+    .body-lg {
         font-size: 18px;
     }
 }
