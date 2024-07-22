@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maxime Lecieux - Aide à l'informatique, dépannage et réparation</title>
+        <meta name="description" content="Je vous accompagne dans vos problématiques informatiques du quotidien et vous apporte des solutions."></html>
+        <meta name="Publisher" content="Maxime Lecieux">
+
+        <!--=============== EMAILJS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <!--=============== TAILWINDCSS ===============-->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <script src="tailwind-config.js"></script>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-secondary w-full top-0 left-0 z-10">
+            <nav class="flex items-center justify-between relative">
+                <div class="flex justify-between items-center lg:gap-24">
+                    <a href="index.html" class="mx-5 my-3">
+                        <span class="body-base">Maxime <span class="text-primary">Lecieux</span></span>
+                    </a>
+                    <div class="hover">
+                        <a href="tel:0783607185" class="body-lg underline">07.83.60.71.85</a>
+                        <i class="hidden ri-phone-fill body-lg lg:inline"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-secondary fixed top-0 -right-full w-9/12 h-full pt-20 pl-7 lg:sticky lg:top-0 lg:w-auto lg:py-5 lg:px-5" id="nav-menu">
+                    <div id="nav-close" class="lg:hidden">
+                        <i class="ri-close-line icon-lg absolute top-4 right-5"></i>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-12">
+                        
+                        <ul class="flex flex-col lg:flex-row gap-9">
+                            <li class="body-lg hover"><a href="index.html#avis">Avis</a></li>
+                            <li class="body-lg hover"><a href="index.html#services">Services</a></li>
+                            <li class="body-lg hover"><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mx-10 my-6 cursor-pointer lg:hidden" id="nav-toggle">
+                    <i class="ri-menu-line icon-lg"></i>
+                </div>
+            </nav>
+        </header>
+        <main class=" w-full mx-auto">
+
+            <!--=============== HEROTOP ===============-->
+
+            <section class="py-10 px-5 lg:py-20">
+                <div class="flex flex-col items-center gap-4">
+                    <h1 class="underline">Mentions légales</h1>
+                    <div class="text-center">
+                        <h2>Identité</h2>
+                        <span>Maxime LECIEUX</span>
+                    </div>
+                    <div class="text-center">
+                        <h2>Coordonnées</h2>
+                        <div class="flex flex-col gap-4">
+                            <span>166 rue Saint Denis 01800 Saint Jean de Niost</span>
+                            <span>Téléphone :
+                                <a href="tel:0783607185" class="body-lg underline">07.83.60.71.85</a>
+                                <i class="hidden ri-phone-fill body-lg lg:inline"></i>
+                            </span>
+                            <span>Adresse mail :
+                                <a href="mailto:maxime.lecieuxlmf@gmail.com" class="body-lg underline">maxime.lecieuxlmf@gmail.com</a>
+                                <i class="ri-external-link-line"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="text-center">
+                        <h2>Mentions relatives à la propriété intellectuelle</h2>
+                        <div class="flex flex-col gap-4">
+                            <span>Images d'illustration :
+                                <a href="https://storyset.com/computer" target="_blank" class="body-lg underline">Storyset.com</a>
+                                <i class="ri-external-link-line"></i>
+                            </span>
+                            <span>Icones d'illustration :
+                                <a href="https://remixicon.com" class="body-lg underline">Remixicon</a>
+                                <i class="ri-external-link-line"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="text-center">
+                        <h2>Hébergement du site web</h2>
+                        <div class="flex flex-col gap-4">
+                            <span>Planet Hoster</span>
+                            <span>4416 Louis B. Mayer, Laval (Québec) H7P 0G1, Canada</span>
+                            <span>FR (Nº Vert): 0 805 080 426</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+            <!--=============== FOOTER ===============-->
+
+            <footer class="bg-secondary w-full top-0 left-0 z-10">
+                <div class="flex justify-between lg:gap-24 items-center text-center">
+                    <a href="index.html" class="mx-5 my-3">
+                        <span class="body-base">Maxime <span class="text-primary">Lecieux</span></span>
+                    </a>
+                    <span class="caption">© Maxime Lecieux, Tous droits réservés</span>
+                    <a href="/mentions.html" class="mx-5 my-3">
+                        <span class="caption lg:body-base underline">Mentions légales</span>
+                    </a>
+                </div>
+            </footer>
+        </main>
+
+        <!--
+            star icon <i class="ri-star-fill"></i>
+            phone icon <i class="ri-phone-fill"></i> 
+            menu icon <i class="ri-menu-line"></i>
+            close icon <i class="ri-close-line"></i>
+        -->
+        <script src="main.js"></script>
+    </body>
+</html>
