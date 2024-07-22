@@ -106,7 +106,6 @@
                         </p>
                         <div class="flex justify-center my-8 lg:justify-start lg:my-12">
                             <a href="/#" class="bg-primary text-white rounded text-caption py-[15px] px-[18px]">Entrer en contact</a>
-
                         </div>
                     </div>
                 </div>
@@ -139,7 +138,7 @@
                         </div>
                     </div>
                     
-                    <div class="flex flex-col gap-16 lg:col-span-6 lg:mx-28">
+                    <div class="flex flex-col gap-8 lg:justify-between lg:col-span-6 lg:mx-28">
 
                         <div class="border border-dark rounded-xl p-3">
                             <div class="flex flex-col gap-4">
@@ -176,6 +175,43 @@
 
                     </div>
 
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+
+            <section class="bg-secondary py-10 px-2 lg:py-20">
+                <h2 class="text-center">Me contacter</h2>
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-4 text-center">
+                        <p>
+                            Vous avez des questions ? Besoin d’aide ? N’hésitez pas à m’envoyer un message, je vous répondrais dès que possible
+                        </p>
+                        <p>
+                            Par téléphone : 
+                            <span class="hover">
+                                <a href="tel:0783607185" class="body-lg underline">07.83.60.71.85</a>
+                                <i class="hidden ri-phone-fill body-lg lg:inline"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Ou par mail via le formulaire ci-dessous
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center max-w-sm lg:max-w-full">
+                        <form action="">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex flex-col gap-4 lg:flex-row">
+                                    <input type="text" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 lg:px-4 lg:py-5" placeholder="Nom" required>
+                                    <input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" placeholder="Adresse mail" required>    
+                                </div>
+                                <div>
+                                    <textarea name="description" id="description" placeholder="Message..." class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 lg:resize-none h-44 lg:px-4 lg:py-5" required></textarea>
+                                </div>
+                                <button type="submit" class="bg-primary text-white rounded text-caption py-[15px] px-[18px] justify-self-center">Envoyer mon message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
