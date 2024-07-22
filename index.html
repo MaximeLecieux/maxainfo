@@ -7,6 +7,9 @@
         <meta name="description" content="Je vous accompagne dans vos problématiques informatiques du quotidien et vous apporte des solutions."></html>
         <meta name="Publisher" content="Maxime Lecieux">
 
+        <!--=============== EMAILJS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
         <!--=============== TAILWINDCSS ===============-->
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
@@ -199,7 +202,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col items-center max-w-sm lg:max-w-full">
-                        <form action="">
+                        <form action="" id="contact-form">
                             <div class="flex flex-col gap-4">
                                 <div class="flex flex-col gap-4 lg:flex-row">
                                     <input type="text" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 lg:px-4 lg:py-5" placeholder="Nom" required>
@@ -207,6 +210,9 @@
                                 </div>
                                 <div>
                                     <textarea name="description" id="description" placeholder="Message..." class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 lg:resize-none h-44 lg:px-4 lg:py-5" required></textarea>
+
+                                    <p class="contact_message p-4 text-center" id="contact-message"></p>
+
                                 </div>
                                 <button type="submit" class="bg-primary text-white rounded text-caption py-[15px] px-[18px] justify-self-center">Envoyer mon message</button>
                             </div>
